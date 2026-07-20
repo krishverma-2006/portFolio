@@ -1,0 +1,124 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 80px 20px 50px;
+    background: rgba(93, 0, 255, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #a855ff;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #a855ff;
+}
+
+/* About */
+#about p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #ddd;
+}
+
+/* Skills */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background: rgba(93, 0, 255, 0.2);
+    border: 1px solid #a855ff;
+    border-radius: 8px;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+}
+
+.skill:hover {
+    background: #a855ff;
+    transform: translateY(-5px);
+}
+
+/* Projects */
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: rgba(93, 0, 255, 0.15);
+    border: 1px solid #a855ff;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    background: rgba(93, 0, 255, 0.3);
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #a855ff;
+    margin-bottom: 10px;
+}
+
+/* Contact */
+#contact p {
+    text-align: center;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(93, 0, 255, 0.1);
+    color: #888;
+}
+
+/* Responsive text */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+}
